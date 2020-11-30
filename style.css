@@ -115,7 +115,7 @@
 
 .photo-grid {
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto 64px;
   display: grid;
   gap: 12px;
   grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
@@ -127,3 +127,46 @@
   object-fit: cover;
   
 }
+
+.places {
+
+}
+
+.place {
+  display: flex;
+  flex-direction: column;
+}
+
+.place__title {
+  width: 90%;
+  font-size: 32px;
+  line-height: 1.09;
+  font-weight: 900;
+  margin: 0 auto;
+  
+}
+
+.place__image {
+  width: 320px;
+  height: 320px;
+  background-image: url(./image/places-kurshskaya-kosa.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 32px 0;
+ 
+
+}
+
+.place__paragraph {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.63;
+  padding-bottom: 25px;
+
+}
+
+.place__paragraph:last-child {
+  padding-bottom: 49px;
+}
+
