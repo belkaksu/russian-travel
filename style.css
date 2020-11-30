@@ -1,0 +1,85 @@
+.page {
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  background-color: #2a2c2f;
+  color: white;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 16px 0 48px;
+}
+
+.header__logo {
+  width: 142px;
+  height: 42px;
+}
+
+.header__nav {
+  padding-top: 14px;
+}
+
+.header__lang-link {
+  font-size: 18px;
+  line-height: 1.1;
+  color: white;
+  text-decoration: none;
+}
+
+.header__lang-link:first-child {
+  text-decoration: underline;
+  margin-right: 18px;
+}
+
+.lead {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.lead__title {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 900;
+    
+}
+
+.lead__subtitile {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.25;
+    padding: 16px 0 40px;
+}
+
+.lead__image {
+    width: 100vw;
+    height: 62.5vw;
+    background-image: url(./image/lead-train.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.lead__caption {
+    font-size: 10px;
+    line-height: 1.4;
+    padding: 8px 0 0 16px;
+    margin: 0 0 64px;
+    text-transform: uppercase;
+}
+
+
