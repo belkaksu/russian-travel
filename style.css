@@ -225,7 +225,6 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 49px;
-
 }
 
 .place:last-child {
@@ -244,7 +243,6 @@
     column-gap: 28px;
     padding-bottom: 73px;
   }
-
 }
 
 .place__title {
@@ -310,10 +308,6 @@
   opacity: 0.8;
 }
 
-
-
-
-
 @media screen and (min-width: 768px) {
   .place__paragraphs {
     grid-area: paragraphs;
@@ -369,7 +363,7 @@
 }
 
 .cover__title {
-  width: 90%;
+  width: 74%;
   margin: 0 auto;
   text-align: center;
   font-size: 32px;
@@ -379,13 +373,30 @@
   position: relative;
 }
 
+@media screen and (min-width: 768px) {
+  .cover__title {
+    width: 73%;
+    font-size: 72px;
+    line-height: 1.06;
+    padding: 115px 0 32px;
+  }
+}
+
 .cover__subtitle {
-  width: 90%;
+  width: 80%;
   text-align: center;
   margin: 0 auto;
   font-size: 14px;
   line-height: 1.14;
   position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .cover__subtitle {
+    width: 47%;
+    font-size: 18px;
+    line-height: 1.22;
+  }
 }
 
 .footer {
