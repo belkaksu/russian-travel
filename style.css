@@ -209,9 +209,27 @@
   object-fit: cover;
 }
 
+.places {
+  padding-bottom: 66px;
+}
+
+@media screen and (min-width: 768px) {
+  .places {
+    width: 94%;
+    margin: 0 auto;
+    padding-bottom: 90px;
+  }
+}
+
 .place {
   display: flex;
   flex-direction: column;
+  padding-bottom: 49px;
+
+}
+
+.place:last-child {
+  padding-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -219,11 +237,14 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
-    grid-template-areas: 
-    "title website"
-    "img paragraphs";
-  
+    grid-template-areas:
+      "title website"
+      "img paragraphs";
+    row-gap: 48px;
+    column-gap: 28px;
+    padding-bottom: 73px;
   }
+
 }
 
 .place__title {
@@ -235,36 +256,48 @@
   grid-area: title;
 }
 
+@media screen and (min-width: 768px) {
+  .place__title {
+    margin: 0;
+    font-size: 42px;
+    line-height: 1.1;
+    grid-area: title;
+  }
+}
+
 .place__image {
-  width: 320px;
-  height: 320px;
+  width: 100%;
   object-fit: cover;
   padding: 32px 0;
-  grid-area: img;
+}
+
+@media screen and (min-width: 768px) {
+  .place__image {
+    width: 100%;
+    padding: 0;
+    grid-area: img;
+  }
 }
 
 .place__website {
   display: none;
-  grid-area: website;
-}
-
-.place__paragraphs {
-  grid-area: paragraphs;
 }
 
 @media screen and (min-width: 768px) {
   .place__website {
     display: block;
+    grid-area: website;
+    align-self: flex-end;
   }
 }
 
 .place__url-heading {
   font-size: 12px;
   line-height: 1;
-   
+  margin: 0;
+  padding-bottom: 12px;
   letter-spacing: 2.4px;
-  
-  color: #AAAAAA;
+  color: #aaa;
 }
 
 .place__link {
@@ -274,7 +307,17 @@
 }
 
 .place__link:hover {
-  opacity: .8;
+  opacity: 0.8;
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+  .place__paragraphs {
+    grid-area: paragraphs;
+  }
 }
 
 .place__paragraph {
@@ -285,12 +328,23 @@
   padding-bottom: 25px;
 }
 
-.place__paragraph:last-child {
-  padding-bottom: 49px;
+.place__paragraph:last-of-type {
+  padding-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .place__paragraph {
+    width: 100%;
+    margin: 0;
+  }
+
+  .place__paragraph:last-child {
+    padding-bottom: 0;
+  }
 }
 
 .cover {
-  margin: 17px auto 64px;
+  margin: 0 auto 64px;
   width: 100%;
   height: 62.5vw;
   background-image: url("./image/cover-main.jpg");
