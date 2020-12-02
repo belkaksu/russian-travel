@@ -1,0 +1,19 @@
+.lead__image {
+  width: 100%;
+  height: 62.5vw;
+  background-image: url("../../../image/lead-train.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .lead__image {
+    height: 56vw;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .lead__image {
+    height: 48vw;
+  }
+}

@@ -1,0 +1,9 @@
+.header__nav {
+  padding-top: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .header__nav {
+    padding-top: 18px;
+  }
+}

@@ -1,0 +1,21 @@
+.place__website {
+  display: none;
+}
+
+@media screen and (min-width: 425px) {
+  .place__website {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 32px;
+
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .place__website {
+    grid-area: website;
+    align-self: flex-end;
+    padding-bottom: 0;
+  }
+}
