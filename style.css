@@ -33,6 +33,13 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .header {
+    width: 92.5%;
+    padding-bottom: 56px;
+  }
+}
+
 .header__logo {
   width: 142px;
   height: 42px;
@@ -85,6 +92,12 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .lead {
+    width: 77%;
+  }
+}
+
 .lead__title {
   width: 90%;
   margin: 0 auto;
@@ -92,6 +105,18 @@
   font-size: 40px;
   line-height: 1.1;
   font-weight: 900;
+}
+
+@media screen and (min-width: 425px) {
+  .lead__title {
+    font-size: 52px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .lead__title {
+    font-size: 80px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -108,6 +133,16 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .lead__title {
+    width: 73%;
+  }
+}
+
+.lead__title_nowrap {
+  white-space: nowrap;
+}
+
 .lead__subtitile {
   width: 90%;
   margin: 0 auto;
@@ -117,9 +152,23 @@
   padding: 16px 0 40px;
 }
 
+@media screen and (min-width: 425px) {
+  .lead__subtitile {
+    width: 85%;
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .lead__subtitile {
+    width: 80%;
+    font-size: 26px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .lead__subtitile {
-    width: 83%;
+    width: 75%;
     font-size: 30px;
     line-height: 1.2;
     padding: 32px 0 56px;
@@ -128,8 +177,19 @@
 
 @media screen and (min-width: 1024px) {
   .lead__subtitile {
-    width: 69%;
+    width: 67%;
   }
+}
+
+@media screen and (min-width: 1280px) {
+  .lead__subtitile {
+    padding-bottom: 64px;
+    width: 65%;
+  }
+}
+
+.lead__subtitle_nowrap {
+  white-space: nowrap;
 }
 
 .lead__image {
@@ -143,6 +203,12 @@
 @media screen and (min-width: 1024px) {
   .lead__image {
     height: 56vw;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .lead__image {
+    height: 48vw;
   }
 }
 
@@ -186,9 +252,14 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .intro {
+    width: 77%;
+  }
+}
+
 .intro__title {
   font-size: 32px;
-  line-height: 1.09;
   font-weight: 900;
   margin: 64px 0 0;
 }
@@ -196,7 +267,6 @@
 @media screen and (min-width: 768px) {
   .intro__title {
     font-size: 54px;
-    line-height: 1.07px;
     margin-top: 88px;
   }
 }
@@ -273,6 +343,14 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .photo-grid {
+    width: 92.5%;
+    gap: 16px;
+    
+  }
+}
+
 .photo-grid__item {
   width: 100%;
   object-fit: cover;
@@ -294,6 +372,13 @@
   .places {
     width: 90%;
     padding-bottom: 92px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .places {
+    width: 77%;
+    
   }
 }
 
@@ -325,6 +410,13 @@
   .place {
     column-gap: 32px;
     padding-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .place {
+    column-gap: 40px;
+    
   }
 }
 
@@ -391,7 +483,7 @@
 
 .place__link {
   font-size: 18px;
-  line-height: 1.22px;
+  line-height: 1.22;
   color: white;
 }
 
@@ -472,8 +564,22 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .cover {
+    width: 92.5%;
+    height: 58vw;
+    margin: 0 auto 92px;
+
+  }
+}
+
+.cover__link {
+  color: white;
+  text-decoration: none;
+}
+
 .cover__title {
-  width: 74%;
+  width: 90%;
   margin: 0 auto;
   text-align: center;
   font-size: 32px;
@@ -481,6 +587,23 @@
   font-weight: 900;
   padding: 33px 0 16px;
   position: relative;
+}
+
+
+
+@media screen and (min-width: 425px) {
+  .cover__title {
+    width: 80%;
+    font-size: 42px;
+    padding: 50px 0 20px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .cover__title {
+    font-size: 64px;
+    padding: 90px 0 26px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -499,6 +622,19 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .cover__title {
+    
+
+    padding-top: 245px;
+    width: 47%;
+  }
+}
+
+.cover__title_nowrap {
+  white-space: nowrap;
+}
+
 .cover__subtitle {
   width: 80%;
   text-align: center;
@@ -506,6 +642,22 @@
   font-size: 14px;
   line-height: 1.14;
   position: relative;
+}
+
+@media screen and (min-width: 425px) {
+  .cover__subtitle {
+    width: 69%;
+    font-size: 16px;
+    line-height: 1.18;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .cover__subtitle {
+    width: 55%;
+    font-size: 17px;
+    line-height: 1.2;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -519,6 +671,12 @@
 @media screen and (min-width: 1024px) {
   .cover__subtitle {
     width: 35%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cover__subtitle {
+    width: 30%;
   }
 }
 
