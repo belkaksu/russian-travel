@@ -1,12 +1,13 @@
 .place__website {
   display: none;
+  margin: 0;
 }
 
 @media screen and (min-width: 425px) {
   .place__website {
     width: 90%;
     display: block;
-    margin: 0 auto;
+    margin: 0;
     padding-bottom: 32px;
 
   }
